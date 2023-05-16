@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "i-mariner-383504",
+  "private_key_id": "3b9b518dc2c63def78a93006c2f8906f2d78d03f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDoC8KMqYw6Q5c1\neo4xcUGGgkj3mNiVDAc5Msj58IjvLmTReAL87IozjPnIZ0TAWAf1Q+BeXvq7GNoQ\nQKxnuUKv8fva5a0o2Qz3WDm5KOw7WW9odMgMLjdvzhwQI/JikPC5Q1fEboKpj3HN\nLCRJVDztiJNy8ROPd/8PIMMltROfzzjjYzpsF4P6BEAgKv/dNlYQ9/KdC/KMnQXB\nvtXG1NR/OFmxsyhsXmrYk4XJuuRQyLpPy5Wc9rzG/64nhY+a19DE5VdbOBoKAlpe\n3fIbxsCiEif3/6Wa67U0/5pO2Vqz0/qtplmE1l16p/aX6yblP6Deav0cn30sjtKx\ndSSQ3jqpAgMBAAECggEAAUxtjIl3XC0cJ8O1j3/FgNnyTBZqId1lHfQTjViD/6io\nDkcIZz9wn4y6qh0v1I65jq0QUJ7h8tGXCM+/1z3BaoglY2p1H10lli3Ddu6MceGU\nfsZmhzDsBP9nh0yYMuaCPlsq3tHKf+XqWl5UnqduxtqEjrhcJmmivwQtK2UZxMNq\noE2cyYIKXx1EL1fyat7iZEWFVgdykE7+PlEVGaKiZsrpYAN77gv26UQI/n+u39tY\nBn4mShWLqwVoNSgO/2BUV0Uo8qjmU0cViZ8bT53//hoER8Vt3qEEynbCk1QANWip\n1k7RdKVN2hAfhaTmE1R+MDz5yJPoDR0r+/T6fRagTQKBgQD+zJgM3EcB0SXaHtBt\n1j7WxAfqwWZJDa5rYToYjchmcxJawO9k+aeVm6uwJr59b1RQ63bey09QoIY0qo48\n9jVYdoUlGL4L1g+xa7EGDTDLFqA8Y01gCTsv+14sBAyiq97uhH6Xg1WFeuL1K1hs\nvdStSHH8d6aAKY0DhXNq8kV/jQKBgQDpI7cL+Py+FOD7TjgCtfW+XODytTt/b4kt\nyuoCst1JoG8r1zXuAYieSEkzq+/AX9GuFjRoeirS4zzC6SX7nDRhM60ATWcLdiYX\n92/6u9PVBAWib7q5Zn1yN1OS4HjuMOGBctziqeUDBTJcgQuuTWmK5UIa9RzYs0bY\nVLFQ3o9ijQKBgEUOaj9CDDSf3KRrKY47PLi0VHj5haFTBeywYzB4bNHnahgSpk81\noofXswaA2avhWna7+nGTpKFzgCwR9Y7sI7UgGiHdvNQ0Zfht+YJsXMcOEMuNFlFq\n7xGoDPPc/RexgTAf1Ld3rtwIXC6aWtLN+DAmrE4Cl6uwlzlXF9rqYo+ZAoGBAJeI\njEBu7LAL2BPfyk4QwRKjQd7fZzW0ZEBsZF+urGBftAKV1krFmmvu5g180s+COEJj\n0lqaFV2PL34slnCNHgqT0P2iUbjEaYwoWxNopA4PmC31WzOIZz8msN6FonSHNvux\nkdqNvPmSliJECjiXvmL2Elp9OOus0v5nRf0fO6k9AoGAZ2aKqRCnxzkBuNsRoqF8\nYA9s2srrq0rgafUjraDVZeBBx4tqbIZZrfDtfYSvM0pyKvIOZIReT7VVVnrO/Thm\n7/KODSYeKr1Yi/Q/7N0ibbZ894d7zghK4maBNoEyIbxRyeot4IMWk2i1748UouMo\naj5h0/8UGHi9Lp8RSWiJhsg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "visionapi-service-account@i-mariner-383504.iam.gserviceaccount.com",
+  "client_id": "110910917939532380297",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/visionapi-service-account%40i-mariner-383504.iam.gserviceaccount.com"
+}

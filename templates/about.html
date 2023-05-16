@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Machine Reading</title>
+
+    <script src="/static/lib/axios.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script src="/static/lib/request.js"></script>
+    <script src="/static/lib/vue.js"></script>
+</head>
+<body>
+<script src="https://unpkg.com/vue@2/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<div id="app">
+
+    <el-row :gutter="20"
+            style="align-items: center; justify-content: center; display: flex; text-align: center; margin-top: 40px;">
+        <el-col :span="6">
+            <div class="grid-content ">
+                <img src="/static/images/logo.png" alt="" style="width: 150px;">
+            </div>
+        </el-col>
+        <el-col :span="6">
+            <div class="grid-content ">
+                <a href="/" style="text-decoration: none; color: #E4E7ED">HOME</a>
+            </div>
+        </el-col>
+        <el-col :span="6">
+            <div class="grid-content ">
+                <a href="/project" style="text-decoration: none; color: #E4E7ED">PROJECT</a>
+
+            </div>
+        </el-col>
+        <el-col :span="6">
+            <div class="grid-content ">
+                <a href="/about" style="text-decoration: none; color: #E4E7ED">ABOUT US</a>
+
+            </div>
+        </el-col>
+    </el-row>
+    <el-row style="text-align: center; padding: 0px 50px 0 50px; border-radius: 15px;">
+
+        <div style="padding: 50px;">
+            <el-col :span="6" v-for="(person, index) in people" :key="index" style="">
+              <div style="padding: 80px;">
+                <div style="padding: 0 20px 10px 0px">
+                  <el-card>
+                    <img :src="person.image" class="image" style="width: 100%;">
+                    <div style="padding: 1px;">
+                      <div style="font-size: 22px; font-weight:bolder;">{[ person.name ]}</div>
+                      <div style="font-weight:bold; font-size: 17px;">{[ person.position ]}</div>
+                      <div style="font-weight:bold;font-size: 12px;">{[ person.linkedin]}</div>
+                    </div>
+                  </el-card>
+                </div>
+              </div>
+            </el-col>
+          </div>
+
+    </el-row>
+    
+</div>
+
+
+
+</body>
+</html>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        background: url("/static/images/bg.png");
+        background-size: cover;
+    }
+
+    .tags .item {
+        width: 120px;
+        line-height: 30px;
+        border-radius: 10px;
+
+    }
+
+    .tags .item a {
+        text-decoration: none;
+        color: #E4E7ED;
+
+    }
+
+    .grid-content {
+        color: #E4E7ED;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .el-col {
+        border-radius: 4px;
+    }
+
+    .bg-purple-dark {
+        background: #99a9bf;
+    }
+
+    .bg-purple {
+        background: #d3dce6;
+    }
+
+    .bg-purple-light {
+        background: #e5e9f2;
+    }
+
+    .grid-content {
+        border-radius: 4px;
+        min-height: 36px;
+    }
+
+    .row-bg {
+        padding: 10px 0;
+        background-color: #f9fafc;
+    }
+</style>
+<script>
+    new Vue({
+        delimiters: ['{[', ']}'],
+        el: '#app',
+        data() {
+            return {
+                people: [
+                   {
+                     image: "static/images/likhith.jpg",
+                     name: "Likhith Ravilla",
+                     position: "Business Analyst",
+                     linkedin: "https://www.linkedin.com/in/ravillalikhith/"
+                   },
+                   {
+                    image: "static/images/preethi.jpg",
+                    name: "Preethi Bachu",
+                    position: "Business Analyst",
+                    linkedin: "https://www.linkedin.com/in/preethi-bachu/"
+                    },
+                    {
+                    image: "static/images/xingying.jpg",
+                    name: "Xingying Li",
+                    position: "Technical Developer",
+                    linkedin: "https://www.linkedin.com/in/xingying-li/"
+                    },
+                    {
+                    image: "static/images/jiaxuan.jpg",
+                    name: "Jiaxuan Xu",
+                    position: "Technical Developer",
+                    linkedin: "https://www.linkedin.com/in/jiaxuan-xu-36a420204/"
+                    },
+                    {
+                    image: "static/images/chuheng.jpg",
+                    name: "Chuheng He",
+                    position: "Technical Developer",
+                    linkedin: "https://www.linkedin.com/in/matthewhhen/"
+                    },
+                    
+
+      // ... add more objects for each person
+                        ]
+
+            }
+        }, 
+
+        mounted() {
+        },
+        methods: {
+            upSucess(response, file, fileList) {
+                {#console.log("9999999:",response.data);#}
+                window.location.href = response.down
+            }
+        }
+    });
+</script>
+

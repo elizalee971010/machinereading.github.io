@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手写体识别demo</title>
+
+    <script src="/static/lib/axios.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script src="/static/lib/request.js"></script>
+    <script src="/static/lib/vue.js"></script>
+</head>
+<body>
+<script src="https://unpkg.com/vue@2/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<div id="app">
+
+    <el-row :gutter="20"  style="align-items: center; justify-content: center; display: flex; text-align: center; margin-top: 40px;">
+        <el-col :span="6">
+            <div class="grid-content ">
+                <img src="/static/images/logo.png" alt="" style="width: 150px;">
+            </div>
+        </el-col>
+        <el-col :span="6">
+            <div class="grid-content ">
+                <a href="/" style="text-decoration: none; color: #E4E7ED">HOME</a>
+            </div>
+        </el-col>
+        <el-col :span="6">
+            <div class="grid-content ">
+                <a href="/project" style="text-decoration: none; color: #E4E7ED">PROJECT</a>
+
+            </div>
+        </el-col>
+        <el-col :span="6">
+            <div class="grid-content ">
+                <a href="/about" style="text-decoration: none; color: #E4E7ED">ABOUT US</a>
+
+            </div>
+        </el-col>
+    </el-row>
+    <el-row style="margin-top: 20%;text-align: center">
+
+
+
+                    <el-upload
+                            accept="application/pdf"
+                            :on-success="upSucess"
+                            action="/upload"
+                           >
+{#                        <i class="el-icon-upload"></i>#}
+{#                        <div class="el-upload__text">将文件拖到此处，或<em>点击上传</em></div>#}
+{#                        <div class="el-upload__tip" slot="tip">只能上传pdf文件，且不超过500kb</div>#}
+                        <el-button size="small" type="" style="width: 300px;line-height: 50px; border-radius: 15px;
+font-weight:bolder;font-size: 30px;">TRY IT!</el-button>
+                    </el-upload>
+
+
+    </el-row>
+    
+    <el-row style="text-align: center;margin-top: 5%;">
+        <img src="/static/images/inde_mr.png" alt="">
+    </el-row>
+
+</div>
+
+
+</body>
+</html>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        background: url("/static/images/bg.png");
+        background-size: cover;
+    }
+
+    .tags .item {
+        width: 120px;
+        line-height: 30px;
+        border-radius: 10px;
+
+    }
+    .tags .item a{
+        text-decoration: none;
+        color: #E4E7ED;
+
+    }
+    .grid-content{
+        color: #E4E7ED;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .el-col {
+        border-radius: 4px;
+    }
+
+    .bg-purple-dark {
+        background: #99a9bf;
+    }
+
+    .bg-purple {
+        background: #d3dce6;
+    }
+
+    .bg-purple-light {
+        background: #e5e9f2;
+    }
+
+    .grid-content {
+        border-radius: 4px;
+        min-height: 36px;
+    }
+
+    .row-bg {
+        padding: 10px 0;
+        background-color: #f9fafc;
+    }
+</style>
+<script>
+    new Vue({
+        delimiters: ['{[', ']}'],
+        el: '#app',
+        data() {
+            return {
+                send_ky: "",
+
+            }
+        },
+
+        mounted() {
+        },
+        methods: {
+            upSucess(response, file, fileList) {
+                {#console.log("9999999:",response.data);#}
+                window.location.href = response.down
+            }
+        }
+    });
+</script>
+
